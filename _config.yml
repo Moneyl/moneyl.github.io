@@ -46,7 +46,7 @@ github_username:  moneyl
 # about_title: About Me
 about_profile_image: images/moneyl_avatar.png
 about_content: | # this will include new lines to allow paragraphs
-  I'm a software developer with a focus on using .NET to build desktop and web applications used internally by an electronics manufacturer. Additionally, I've created customer facing websites for report generation and data entry.
+  I'm a software developer currently focused on using .NET to build tools like desktop and web apps that support internal teams at an electronics manufacturer.  Additionally, I help customers access valuable information by building automated reports and websites.
 
   In my personal projects, I typically work with C++ and explore 3D graphics APIs, binary file formats, and game development. A good chunk of my side projects involve creating modding tools for the 2018 remaster of Red Faction Guerrilla, dealing with its many custom file formats. This was sparked by seeing what modders achieved in other games when equipped with the right tools. I want to see the same transformation in one of my childhood favorites.
 
