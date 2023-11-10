@@ -108,7 +108,7 @@ content:
           <a href="https://imgur.com/DhfY6o2"><img src="https://i.imgur.com/DhfY6o2.gif" title="source: imgur.com" /></a>
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
