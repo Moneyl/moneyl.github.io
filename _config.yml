@@ -93,6 +93,12 @@ content:
         description: |
           Generates a map using continuous noise and simulating plate tectonics and rainfall. One of my first big personal projects was a procedural map generator (back in the 2010s). This one was a second attempt years later. I was inspired by the detailed world generation of the indie game Dwarf Fortress.
 
+          My original generator determined water and mountain tiles by a simple elevation check, and spread moisture from water to nearby regions. 
+          
+          In the new one I instead tried to generate mountains by simulating tectonic plates moving around and pressing the land up, and simulated weather systems moving around the map due to wind and dropping moisture on land it hit.
+
+          Both designs are very finicky with lots of tweaking needed to get realistic looking maps. You can see some of this in the video.
+
           <iframe width="100%" height="630" src="https://www.youtube.com/embed/psHEdi8F7Rs?si=ECzS9d3JziVhAkrJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
       - layout: top-middle
