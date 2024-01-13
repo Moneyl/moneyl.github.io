@@ -66,6 +66,17 @@ content:
           A map editor and file format viewer for the 2018 game Red Faction Guerrilla Re-Mars-tered. Originally developed with C++, DirectX 11, CMake, and Ghidra. The master branch is a rewrite using the Beef programming language with the initial focus being on multiplayer map editing.
 
           <p align="center"><img src="https://user-images.githubusercontent.com/8206401/168496531-fc52d441-dacd-468c-b03d-cdcdde5a9ae6.jpg" width="100%"/></p>
+
+      - layout: top-middle
+        title: Reconstructor
+        link: https://github.com/rfg-modding/Reconstructor
+        # link_text: Project Website
+        additional_links:
+          - title:  https://github.com/rfg-modding/Reconstructor
+            icon: fab fa-github
+            url: https://github.com/rfg-modding/Reconstructor
+        description: |
+          A community patch in the 2018 game Red Faction Guerrilla Re-Mars-tered. The game has many hardcoded limits that restrict what players can modify. This project aims to bypass those restrictions, fix bugs, and eventually add a lua scripting system to support more dynamic mods. It uses code injection, function hooking, and binary patches to modify the game at runtime.
       
       - layout: top-middle
         title: Cubic destruction system
