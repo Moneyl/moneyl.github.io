@@ -48,7 +48,9 @@ about_profile_image: images/moneyl_avatar.png
 about_content: | # this will include new lines to allow paragraphs
   I'm a software developer that uses .NET to build desktop and web apps that support internal teams at an electronics manufacturer. 
 
-  In my personal projects, I've mostly worked with C++ to explore 3D graphics APIs, binary file formats, and game development. A good chunk of my side projects have involved creating modding tools for the 2018 remaster of Red Faction Guerrilla, dealing with its many custom file formats. Lately I've moved towards C# being my primary language with some side projects in newer languages like Rust.
+  In my personal projects, I've mostly worked with C++ to explore 3D graphics APIs, binary file formats, and game development. A good chunk of my side projects have involved creating modding tools for the 2018 remaster of Red Faction Guerrilla, dealing with its many custom file formats. 
+
+  Lately I've moved towards C# being my primary language with some side projects in languages like Rust.
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
