@@ -2,7 +2,7 @@ theme: jekyll-theme-chirpy
 
 lang: en
 
-title: Moneyl's Devblog
+title: Luke Money's Devblog
 tagline: Gamedev & modding
 description: Gamedev & modding
 url: https://moneyl.github.io
@@ -12,7 +12,7 @@ github:
   username: moneyl
 
 social:
-  name: moneyl
+  name: Luke Money
   links:
     - https://github.com/moneyl
 
