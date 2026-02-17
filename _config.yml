@@ -1,140 +1,93 @@
-# Site
-repository: moneyl/moneyl.github.io
-favicon: images/favicon.ico
+theme: jekyll-theme-chirpy
 
-# Content configuration version
-version: 2
+lang: en
 
-# Personal info
-name: Luke Money
-title: Software Developer
-# website: https://github.com/Moneyl
+title: Moneyl's Devblog
+tagline: Gamedev & modding
+description: Gamedev & modding
+url: https://moneyl.github.io
+baseurl: ""
 
-# Dark Mode (true/false/never)
-darkmode: false
+github:
+  username: moneyl
 
-# Social links
-# twitter_username: 
-github_username:  moneyl
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: 
-# linkedin_username: 
-# xing_username: jekyll
-# pinterest_username: jekyll
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
+social:
+  name: moneyl
+  links:
+    - https://github.com/moneyl
 
-# Additional icon links
-# additional_links:
-# - title: itsgoingto.be
-#   icon: fas fa-globe
-#   url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
+theme_mode:
 
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+avatar: /images/moneyl_avatar.png
 
-# About Section
-# about_title: About Me
-about_profile_image: images/moneyl_avatar.png
-about_content: | # this will include new lines to allow paragraphs
-  I'm a software developer that uses .NET to build desktop and web apps that support internal teams at an electronics manufacturer. 
+toc: true
 
-  In my personal projects, I've mostly worked with C++ to explore 3D graphics APIs, binary file formats, and game development. A good chunk of my side projects have involved creating modding tools for the 2018 remaster of Red Faction Guerrilla, dealing with its many custom file formats. 
+paginate: 10
 
-  Lately I've moved towards C# being my primary language with some side projects in languages like Rust.
-content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Nanoforge
-        link: https://github.com/rfg-modding/Nanoforge/tree/CppBranch
-        # link_text: Project Website
-        additional_links:
-          - title:  https://github.com/rfg-modding/Nanoforge/
-            icon: fab fa-github
-            url: https://github.com/rfg-modding/Nanoforge/tree/CppBranch
-        description: | # this will include new lines to allow paragraphs
-          A map editor and file format viewer for the 2018 game Red Faction Guerrilla Re-Mars-tered. Originally developed with C++, DirectX 11, CMake, and Ghidra. The master branch is a rewrite in C# with the initial focus being on multiplayer map editing.
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-          <p align="center"><img src="https://user-images.githubusercontent.com/8206401/168496531-fc52d441-dacd-468c-b03d-cdcdde5a9ae6.jpg" width="100%"/></p>
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
-      - layout: top-middle
-        title: Reconstructor
-        link: https://github.com/rfg-modding/Reconstructor
-        # link_text: Project Website
-        additional_links:
-          - title:  https://github.com/rfg-modding/Reconstructor
-            icon: fab fa-github
-            url: https://github.com/rfg-modding/Reconstructor
-        description: |
-          A community patch in the 2018 game Red Faction Guerrilla Re-Mars-tered. The game has many hardcoded limits that restrict what players can modify. This project aims to bypass those restrictions, fix bugs, and eventually add a lua scripting system to support more dynamic mods. It uses code injection, function hooking, and binary patches to modify the game at runtime.
-      
-      - layout: top-middle
-        title: Cubic destruction system
-        description: |
-          A simulation with fully dynamic object destruction based on splitting cubes in half on impact. Developed with C++, CMake, Bullet Physics Engine, OpenGL 3.3.
-
-          <iframe width="100%" height="630" src="https://www.youtube.com/embed/ibs8f1MW1YQ?si=mXu7xcKlGmpXI04C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-      - layout: top-middle
-        title: Mars terrain mesh
-        description: |
-          A 3D map of Mars' Mariner Valley. Generated from real elevation data from the Mars Global Surveyor Spacecraft. The elevations were extracted from the geotiff with QGIS and the mesh was generated from those with C++.
-
-          <iframe width="100%" height="630" src="https://www.youtube.com/embed/Zn5I5sv6PhE?si=o0UJ9PHtagsBBtkd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-      - layout: top-middle
-        title: AT Robots
-        link: https://github.com/Moneyl/Capstone-Fall2021
-        description: |
-          AT Robots is a program used in the Computer Organization course at SUNY Polytechnic Institute to give students experience with writing assembly. It uses a simplified assembly language to control tanks in a virtual arena which are then pitted against each other in a tournament.
-
-          Unfortunately the software is written in Turbo Pascal and must be run inside DOSBox. For my Capstone project I made a C++ rewrite of AT Robots. It takes assembly text files as input, compiles them to bytecode, and executes the program inside a bytecode VM.
-
-          Due to the scale of the project it didn't reach feature parity by the end of the semester. Though in some ways it was better, such as the improved UI and debugging tools.
-
-          <a href="https://imgur.com/DhfY6o2"><img src="https://i.imgur.com/DhfY6o2.gif" title="source: imgur.com" /></a>
-
-      - layout: top-middle
-        title: Space mining game
-        description: |
-          A simple 2D game with editor UIs auto generated via reflection. Logic written in the Beef programming language. Rendered with OpenGL 3.0. It uses an ECS to represent entities. The editor UI is generated by reflecting the fields of the components that make up each entity.
-
-          <iframe width="100%" height="630" src="https://www.youtube.com/embed/YMOJCWA-yuo?si=5LSCvH-mzeyqH6ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-      - layout: top-middle
-        title: Procedural map generator
-        description: |
-          Generates a map using continuous noise and simulating plate tectonics and rainfall. One of my first big personal projects was a procedural map generator (back in the 2010s). This one was a second attempt years later. I was inspired by the detailed world generation of the indie game Dwarf Fortress.
-
-          My original generator determined water and mountain tiles by a simple elevation check, and spread moisture from water to nearby regions. 
-          
-          In the new one I instead tried to generate mountains by simulating tectonic plates moving around and pressing the land up, and simulated weather systems moving around the map due to wind and dropping moisture on land it hit.
-
-          Both designs are very finicky with lots of tweaking needed to get realistic looking maps. You can see some of this in the video.
-
-          <iframe width="100%" height="630" src="https://www.youtube.com/embed/psHEdi8F7Rs?si=ECzS9d3JziVhAkrJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-# Footer
-footer_show_references: false
-# references_title: References on request (Override references text)
-
-# Build settings
-remote_theme: sproogen/resume-theme
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
 
 sass:
-  sass_dir: _sass
   style: compressed
 
-plugins:
- - jekyll-seo-tag
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
